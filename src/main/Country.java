@@ -3,13 +3,13 @@ package main;
 public class Country
 {
 	private String countryName;
-	private int population;
-	private int area;	
+	private long population;
+	private long area;	
 
 	public Country(){
 	}
 
-	public Country(String countryName, int population, int area)
+	public Country(String countryName, long population, long area)
 	{
 		this.countryName = countryName;
 		this.population = population;
@@ -18,7 +18,7 @@ public class Country
 
 	public Country findCountryWithLargestArea(Country country[])
 	{
-		int maxArea = country[0].area;
+		long maxArea = country[0].area;
 		int index = 0;
 
 		for(int i=1; i<country.length; i++)
@@ -34,7 +34,7 @@ public class Country
 	
 	public Country findCountryWithLargestPopulation(Country country[])
 	{
-		int maxPopulation = country[0].population;
+		long maxPopulation = country[0].population;
 		int index = 0;
 
 		for(int i=1; i<country.length; i++)
